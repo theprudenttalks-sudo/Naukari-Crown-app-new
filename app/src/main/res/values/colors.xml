@@ -1,0 +1,7 @@
+<resources>
+    <color name="brand_black">#0B0B0B</color>
+    <color name="brand_gold">#D4AF37</color>
+    <color name="brand_gold_light">#F7D774</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="icon_background">#0B0B0B</color>
+</resources>
