@@ -21,14 +21,6 @@ jobs:
           distribution: temurin
           java-version: "17"
 
-      - name: Restore Naukari Crown logo
-        shell: bash
-        run: |
-          mkdir -p app/src/main/res/drawable-nodpi
-          cat assets/logo.part00 assets/logo.part01 assets/logo.part02 assets/logo.part03 assets/logo.part04 | base64 -d > app/src/main/res/drawable-nodpi/naukari_logo.png
-          file app/src/main/res/drawable-nodpi/naukari_logo.png
-          test -s app/src/main/res/drawable-nodpi/naukari_logo.png
-
       - name: Install Android SDK 35
         shell: bash
         run: |
@@ -52,11 +44,11 @@ jobs:
         run: |
           test -f app/build/outputs/apk/debug/app-debug.apk
           unzip -l app/build/outputs/apk/debug/app-debug.apk | grep -E "classes.dex|resources.arsc|AndroidManifest.xml"
-          cp app/build/outputs/apk/debug/app-debug.apk NaukariCrown-v0.4.apk
+          cp app/build/outputs/apk/debug/app-debug.apk NaukariCrown-v0.5.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: NaukariCrown-v0.4-APK
-          path: NaukariCrown-v0.4.apk
+          name: NaukariCrown-v0.5-APK
+          path: NaukariCrown-v0.5.apk
           if-no-files-found: error
