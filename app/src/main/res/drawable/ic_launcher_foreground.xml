@@ -1,8 +1,25 @@
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:left="18dp"
-        android:top="18dp"
-        android:right="18dp"
-        android:bottom="18dp"
-        android:drawable="@drawable/naukari_logo" />
-</layer-list>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M54,11 A43,43 0,1 1,53.99 11"
+        android:fillColor="#101011"
+        android:strokeColor="#E2AE38"
+        android:strokeWidth="4"/>
+    <path
+        android:pathData="M54,15 A39,39 0,1 1,53.99 15"
+        android:fillColor="#0A0A0B"
+        android:strokeColor="#FFD86D"
+        android:strokeWidth="1.5"/>
+    <path
+        android:fillColor="#FFD76A"
+        android:strokeColor="#E2AE38"
+        android:strokeWidth="1"
+        android:pathData="M28,56 L34,37 L45,47 L54,28 L63,47 L74,37 L80,56 L75,67 L33,67 Z"/>
+    <path
+        android:fillColor="#D99A1D"
+        android:pathData="M34,67 C42,63 66,63 74,67 L72,73 C62,77 46,77 36,73 Z"/>
+    <path android:fillColor="#FFF1A8" android:pathData="M54,23 C51,26 51,30 54,33 C57,30 57,26 54,23 Z"/>
+</vector>
