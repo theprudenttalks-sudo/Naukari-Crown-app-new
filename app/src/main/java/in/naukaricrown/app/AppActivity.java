@@ -71,7 +71,7 @@ public class AppActivity extends Activity {
     }
     ImageView logo(int size){
         ImageView i=new ImageView(this);
-        i.setImageResource(R.drawable.naukari_logo);
+        i.setImageResource(R.drawable.nc_badge);
         i.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
         i.setLayoutParams(lp(dp(size),dp(size)));
         return i;
